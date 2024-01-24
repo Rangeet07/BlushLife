@@ -9,7 +9,7 @@ const url = process.env.RAPID_KEY;
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': '3b10504cc6msh61d7eb1a77cfcbbp19809ajsnb2cf284f1bf3',
+    'X-RapidAPI-Key': '55e6e4d453msh2c3a9c82acd732cp141c8fjsn580ec8d16f01',
     'X-RapidAPI-Host': 'instagram130.p.rapidapi.com'
   }
 };

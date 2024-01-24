@@ -1,11 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     experimental:{
-        appDir: true,
+        esmExternals: "loose",
         serverComponentsExternalPackages: ["mongoose"],
     },
     images:{
-        domains:['instagram.fkiv2-1.fna.fbcdn.net']
+        // domains:['instagram.fkiv2-1.fna.fbcdn.net'],
+        remotePatterns: [
+            {
+              protocol: 'https',
+              hostname: '**.cdninstagram.com',
+              port: '',
+              pathname: '**',
+            },
+          
+          ],
     }
 }
 
